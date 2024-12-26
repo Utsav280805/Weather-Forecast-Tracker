@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f9;
+  }
+  
+  h1 {
+    color: #4CAF50;
+    text-align: center;
+  }
+  
+  .container {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Button styles with gradient background, animation and hover effect */
+  .button {
+    background: linear-gradient(45deg, #4CAF50, #008CBA); /* Gradient from green to blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover and active states */
+  }
+  
+  .button:hover {
+    background: linear-gradient(45deg, #008CBA, #4CAF50); /* Reverse gradient on hover */
+    transform: scale(1.1); /* Slightly enlarge the button */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  }
+  
+  .button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 172, 238, 0.6); /* Focus glow effect */
+  }
+  
+  .button:active {
+    transform: scale(0.95); /* Slight shrink when clicked */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Reset shadow on active state */
+  }
+  
+
+  select {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .result {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .result h2 {
+    color: #333;
+  }
+  
+  .list-item {
+    margin-bottom: 10px;
+  }
+  
+  /* Add a smooth background transition for the result box */
+  .result {
+    transition: background-color 0.3s ease;
+  }
+  
+  .result:hover {
+    background-color: #f0f8ff; /* Light blue background when hovered */
+  }
+  

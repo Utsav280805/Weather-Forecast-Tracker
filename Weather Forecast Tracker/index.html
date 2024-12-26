@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast Tracker</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+  <h1>Weather Forecast Tracker</h1>
+
+  <!-- Input section to add new city weather -->
+  <div class="container">
+    <h2>Add City Weather</h2>
+    <label for="cityName">City Name:</label>
+    <input type="text" id="cityName" placeholder="Enter city name" required>
+    
+    <label for="temperature">Temperature (°C):</label>
+    <input type="number" id="temperature" placeholder="Enter temperature" required>
+    
+    <label for="condition">Condition:</label>
+    <select id="condition">
+      <option value="Sunny">Sunny</option>
+      <option value="Cloudy">Cloudy</option>
+      <option value="Rainy">Rainy</option>
+    </select>
+    
+    <button class="button" onclick="addCityWeather()">Add Weather</button>
+  </div>
+
+  <!-- Display functions for weather summary -->
+  <div class="container">
+    <button class="button" onclick="logHottestCity()">Find Hottest City</button>
+    <button class="button" onclick="filterByCondition()">Filter by Sunny</button>
+    <button class="button" onclick="logWeatherSummary()">Show Weather Summary</button>
+    <button class="button" onclick="sortCitiesByTemperature()">Sort Cities by Temperature</button>
+  </div>
+
+  <!-- Result display section -->
+  <div id="result" class="result">
+    <h2>Results</h2>
+    <p>Use the buttons above to view the results.</p>
+  </div>
+  <script type="module" src="script.js"></script>
+ 
+
+</body>
+</html>
